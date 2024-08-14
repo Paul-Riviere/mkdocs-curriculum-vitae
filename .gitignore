@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Distribution / packaging
+*.egg-info/
+dist
+
+# mypy
+.mypy_cache/
+
+# Environments
+.venv
+
+# Environment file
+.env
+
+# MkDocs
+public
+site
