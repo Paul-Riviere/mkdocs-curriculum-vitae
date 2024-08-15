@@ -1,0 +1,13 @@
+---
+version: "3"
+
+tasks:
+  build:
+    desc: Run mkdocs build command
+    cmds:
+      - .venv/bin/mkdocs build
+
+  serve:
+    desc: Run mkdocs serve command
+    cmds:
+      - .venv/bin/mkdocs serve --watch-theme
