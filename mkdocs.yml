@@ -1,0 +1,13 @@
+---
+# Project information
+site_name: MkDocs curriculum vitae Theme
+site_url: https://paul-riviere.github.io/mkdocs-curriculum-vitae/
+site_description: MkDocs curriculum vitae Theme
+
+# Theme
+theme:
+  name: curriculum-vitae
+
+# Plugins
+plugins:
+  - search

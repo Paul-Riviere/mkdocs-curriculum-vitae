@@ -25,7 +25,7 @@ dependencies = [
 ]
 
 [project.urls]
-Documentation = ""
+Documentation = "https://paul-riviere.github.io/mkdocs-curriculum-vitae/"
 Issues = "https://github.com/Paul-Riviere/mkdocs-curriculum-vitae/issues"
 Source = "https://github.com/Paul-Riviere/mkdocs-curriculum-vitae"
 

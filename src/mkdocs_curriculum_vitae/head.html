@@ -1,0 +1,9 @@
+<head>
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="{{ config['site_description'] }}"/>
+    <meta name="keywords" content="mkdocs,documentation,curriculum-vitae"/>
+    {%- for path in config.extra_css %}
+    <link href="{{ path | url }}" rel="stylesheet">
+    {%- endfor %}
+</head>

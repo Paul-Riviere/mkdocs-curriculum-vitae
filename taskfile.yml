@@ -6,10 +6,6 @@ dotenv: [".config/environments/.env"]
 vars:
   PYTHON: '{{.PYTHON | default "python3"}}'
 
-includes:
-  lint: .taskfiles/lint.yml
-  mkdocs: .taskfiles/mkdocs.yml
-
 tasks:
   default:
     cmds:
@@ -22,7 +18,6 @@ tasks:
       - |
         {{.PYTHON}} -m venv .venv
         .venv/bin/pip install --upgrade pip build twine
-        .venv/bin/pip install -e .[lint]
 
   clean:
     desc: Cleanup project
