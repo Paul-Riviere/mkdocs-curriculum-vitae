@@ -1,0 +1,34 @@
+---
+name: pages
+
+on:  # yamllint disable-line rule:truthy
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      TASK_VERSION: 3.32.0
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Configure Git Credentials
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.12
+      - name: Install Dependencies
+        run: |
+          wget https://github.com/go-task/task/releases/download/v$TASK_VERSION/task_linux_amd64.deb
+          sudo dpkg -i task_linux_amd64.deb
+          task bootstrap
+      - name: Publish MkDocs to Github Pages
+        run: .venv/bin/mkdocs gh-deploy --force
