@@ -11,3 +11,8 @@ tasks:
     desc: Run mkdocs serve command
     cmds:
       - .venv/bin/mkdocs serve --watch-theme
+
+  serve-test-doc:
+    desc: Run mkdocs serve command on test_doc folder (tests/fixtures/test_doc)
+    cmds:
+      - .venv/bin/mkdocs serve --watch-theme --dev-addr localhost:8002 --config-file tests/fixtures/test_doc/mkdocs.yml
