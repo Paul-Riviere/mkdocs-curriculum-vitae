@@ -6,21 +6,8 @@ site_description: MkDocs curriculum vitae Theme
 
 # Theme
 theme:
-  name: curriculum-vitae
-  firstname: John
-  lastname: Doe
-  mail: john.doe@example.com
-  location: Tours
-  experiences:
-    - title: First experience
-      description: First experience description
-    - title: Second experience
-      description: Second experience description
-  schools:
-    - title: First school
-      description: First school description
-    - title: Second school
-      description: Second school description
+  name: readthedocs
+
 # Plugins
 plugins:
   - search
