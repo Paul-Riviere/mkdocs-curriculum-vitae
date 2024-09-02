@@ -65,6 +65,33 @@ schools:
     description: Second school description
 ```
 
+### Titles override
+
+You can override titles with ease with those variables. You don't need to define them, as they have default values.
+
+```yml
+main_title: Main title override
+basic_informations_section_title: Basic infos title override
+personnal_links_section_title: Links title override
+experiences_section_title: Experiences title override
+education_section_title: Education title overrride
+```
+
+### Personnal links
+
+You can add links to your CV, those variables are optionnal. The link will appear only if the associated variable is defined.
+
+```yml
+personnal_links:
+  github: https://example.com/
+  gitlab: https://example.com/
+  linkedin: https://example.com/
+  facebook: https://example.com/
+  youtube: https://example.com/
+  Instagram: https://example.com/
+  tiktok: https://example.com/
+```
+
 ### Full Example
 
 ```yml
@@ -76,6 +103,19 @@ theme:
   lastname: Doe
   mail: john.doe@example.com
   location: Tours
+  main_title: Main title override
+  basic_informations_section_title: Basic infos title override
+  personnal_links_section_title: Links title override
+  experiences_section_title: Experiences title override
+  education_section_title: Education title overrride
+  personnal_links:
+    github: https://example.com/
+    gitlab: https://example.com/
+    linkedin: https://example.com/
+    facebook: https://example.com/
+    youtube: https://example.com/
+    Instagram: https://example.com/
+    tiktok: https://example.com/
   experiences:
     - title: First experience
       description: First experience description
