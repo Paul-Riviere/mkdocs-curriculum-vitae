@@ -13,8 +13,17 @@ theme:
   location: Tours
   main_title: Main title override
   basic_informations_section_title: Basic infos title override
+  personnal_links_section_title: Links title override
   experiences_section_title: Experiences title override
   education_section_title: Education title overrride
+  personnal_links:
+    github: https://example.com/
+    gitlab: https://example.com/
+    linkedin: https://example.com/
+    facebook: https://example.com/
+    youtube: https://example.com/
+    Instagram: https://example.com/
+    tiktok: https://example.com/
   experiences:
     - title: First experience
       description: First experience description
