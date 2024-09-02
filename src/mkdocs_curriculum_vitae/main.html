@@ -4,6 +4,10 @@
     <body>
         <h1>{{ config.theme.main_title | default('MkDocs curriculum vitae')}}</h1>
         <br>
+        {%- if config.theme.profile_picture %}
+        <img src="{{ config.theme.profile_picture }}" alt="Profile picture link seems to be broken or unreachable.">
+        <br>
+        {%- endif %}
         <h2>{{ config.theme.basic_informations_section_title | default('Basic informations')}}</h2>
         <p>{{ config.theme.firstname }} {{ config.theme.lastname }}</p>
         <p>{{ config.theme.mail }}</p>
