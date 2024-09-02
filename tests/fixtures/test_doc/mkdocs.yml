@@ -11,6 +11,10 @@ theme:
   lastname: Doe
   mail: john.doe@example.com
   location: Tours
+  main_title: Main title override
+  basic_informations_section_title: Basic infos title override
+  experiences_section_title: Experiences title override
+  education_section_title: Education title overrride
   experiences:
     - title: First experience
       description: First experience description

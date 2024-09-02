@@ -2,14 +2,14 @@
 <html lang="en">
     {% include "head.html" %}
     <body>
-        <h1>MkDocs curriculum vitae</h1>
+        <h1>{{ config.theme.main_title | default('MkDocs curriculum vitae')}}</h1>
         <br>
-        <h2>Basic informations</h2>
+        <h2>{{ config.theme.basic_informations_section_title | default('Basic informations')}}</h2>
         <p>{{ config.theme.firstname }} {{ config.theme.lastname }}</p>
         <p>{{ config.theme.mail }}</p>
         <p>{{ config.theme.location }}</p>
         <br>
-        <h2>Experiences</h2>
+        <h2>{{ config.theme.experiences_section_title | default('Experiences')}}</h2>
         <ul>
             {%- for experience in config.theme.experiences %}
             <li>
@@ -19,7 +19,7 @@
             {%- endfor %}
         </ul>
         <br>
-        <h2>Education</h2>
+        <h2>{{ config.theme.education_section_title | default('Education')}}</h2>
         <ul>
             {%- for school in config.theme.schools %}
             <li>
