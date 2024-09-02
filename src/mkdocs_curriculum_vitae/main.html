@@ -9,6 +9,43 @@
         <p>{{ config.theme.mail }}</p>
         <p>{{ config.theme.location }}</p>
         <br>
+        <h2>{{ config.theme.personnal_links_section_title | default('Links')}}</h2>
+        <br>
+        {%- if config.theme.personnal_links.github %}
+        <a href="{{ config.theme.personnal_links.github }}">GitHub</a>
+        <br>
+        {%- endif %}
+
+        {%- if config.theme.personnal_links.gitlab %}
+        <a href="{{ config.theme.personnal_links.gitlab }}">GitLab</a>
+        <br>
+        {%- endif %}
+
+        {%- if config.theme.personnal_links.linkedin %}
+        <a href="{{ config.theme.personnal_links.linkedin }}">LinkedIn</a>
+        <br>
+        {%- endif %}
+
+        {%- if config.theme.personnal_links.facebook %}
+        <a href="{{ config.theme.personnal_links.facebook }}">Facebook</a>
+        <br>
+        {%- endif %}
+
+        {%- if config.theme.personnal_links.youtube %}
+        <a href="{{ config.theme.personnal_links.youtube }}">YouTube</a>
+        <br>
+        {%- endif %}
+
+        {%- if config.theme.personnal_links.Instagram %}
+        <a href="{{ config.theme.personnal_links.Instagram }}">Instagram</a>
+        <br>
+        {%- endif %}
+
+        {%- if config.theme.personnal_links.tiktok %}
+        <a href="{{ config.theme.personnal_links.tiktok }}">TikTok</a>
+        <br>
+        {%- endif %}
+        <br>
         <h2>{{ config.theme.experiences_section_title | default('Experiences')}}</h2>
         <ul>
             {%- for experience in config.theme.experiences %}
