@@ -35,6 +35,16 @@ mail: john.doe@example.com
 location: Tours
 ```
 
+### Profile picture
+
+- `profile_picture`
+
+Example :
+
+```yml
+profile_picture: https://dummyimage.com/600x600/
+```
+
 ### Experiences
 
 - `experiences`
@@ -103,6 +113,7 @@ theme:
   lastname: Doe
   mail: john.doe@example.com
   location: Tours
+  profile_picture: https://dummyimage.com/600x600/
   main_title: Main title override
   basic_informations_section_title: Basic infos title override
   personnal_links_section_title: Links title override
