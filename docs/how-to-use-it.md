@@ -1,10 +1,4 @@
-# MkDocs curriculum vitae theme
-
-A MkDocs theme, made for curriculum vitae.
-
-This theme allows you to generate a curriculum vitae, without markdown, only configuration with variables.
-
-## How to use it
+# How to use it
 
 In you `mkdocs.yml` file, put the curriculum-vitae theme :
 
