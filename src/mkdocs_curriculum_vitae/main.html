@@ -2,17 +2,23 @@
 <html lang="en">
     {% include "head.html" %}
     <body>
-        <h1>{{ config.theme.main_title | default('MkDocs curriculum vitae')}}</h1>
+        <div class="header">
+            <h1>{{ config.theme.main_title | default('MkDocs curriculum vitae')}}</h1>
+        </div>
         <br>
-        {%- if config.theme.profile_picture %}
-        <img src="{{ config.theme.profile_picture }}" alt="Profile picture link seems to be broken or unreachable.">
+        <div class="basic-informations">
+            {%- if config.theme.profile_picture %}
+            <img src="{{ config.theme.profile_picture }}" alt="Profile picture link seems to be broken or unreachable.">
+            {%- endif %}
+            <br>
+            <h2>{{ config.theme.basic_informations_section_title | default('Basic informations')}}</h2>
+            <p>{{ config.theme.firstname }} {{ config.theme.lastname }}</p>
+            <p>{{ config.theme.mail }}</p>
+            <p>{{ config.theme.location }}</p>
+            <br>
+        </div>
         <br>
-        {%- endif %}
-        <h2>{{ config.theme.basic_informations_section_title | default('Basic informations')}}</h2>
-        <p>{{ config.theme.firstname }} {{ config.theme.lastname }}</p>
-        <p>{{ config.theme.mail }}</p>
-        <p>{{ config.theme.location }}</p>
-        <br>
+        <div></div>
         <h2>{{ config.theme.personnal_links_section_title | default('Links')}}</h2>
         <br>
         {%- if config.theme.personnal_links.github %}
