@@ -1,73 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
     {% include "head.html" %}
-    <body>
-        <h1>{{ config.theme.main_title | default('MkDocs curriculum vitae')}}</h1>
-        <br>
-        {%- if config.theme.profile_picture %}
-        <img src="{{ config.theme.profile_picture }}" alt="Profile picture link seems to be broken or unreachable.">
-        <br>
-        {%- endif %}
-        <h2>{{ config.theme.basic_informations_section_title | default('Basic informations')}}</h2>
-        <p>{{ config.theme.firstname }} {{ config.theme.lastname }}</p>
-        <p>{{ config.theme.mail }}</p>
-        <p>{{ config.theme.location }}</p>
-        <br>
-        <h2>{{ config.theme.personnal_links_section_title | default('Links')}}</h2>
-        <br>
-        {%- if config.theme.personnal_links.github %}
-        <a href="{{ config.theme.personnal_links.github }}">GitHub</a>
-        <br>
-        {%- endif %}
+    <body class="grid-container">
+        <div class="header">
+            <h1>{{ config.theme.main_title | default('MkDocs curriculum vitae')}}</h1>
+        </div>
+        <div class="basic-informations">
+            {%- if config.theme.profile_picture %}
+            <div class="profile-picture-container">
+                <img src="{{ config.theme.profile_picture }}" alt="Profile picture link seems to be broken or unreachable." class="profile-picture">
+            </div>
+            {%- endif %}
+            <br>
+            <h2>{{ config.theme.basic_informations_section_title | default('Basic informations')}}</h2>
+            <p>{{ config.theme.firstname }} {{ config.theme.lastname }}</p>
+            <p>{{ config.theme.mail }}</p>
+            <p>{{ config.theme.location }}</p>
+            <br>
+            <h2>{{ config.theme.personnal_links_section_title | default('Links')}}</h2>
+            {%- if config.theme.personnal_links.github %}
+            <a href="{{ config.theme.personnal_links.github }}">GitHub</a>
+            <br>
+            {%- endif %}
 
-        {%- if config.theme.personnal_links.gitlab %}
-        <a href="{{ config.theme.personnal_links.gitlab }}">GitLab</a>
-        <br>
-        {%- endif %}
+            {%- if config.theme.personnal_links.gitlab %}
+            <a href="{{ config.theme.personnal_links.gitlab }}">GitLab</a>
+            <br>
+            {%- endif %}
 
-        {%- if config.theme.personnal_links.linkedin %}
-        <a href="{{ config.theme.personnal_links.linkedin }}">LinkedIn</a>
-        <br>
-        {%- endif %}
+            {%- if config.theme.personnal_links.linkedin %}
+            <a href="{{ config.theme.personnal_links.linkedin }}">LinkedIn</a>
+            <br>
+            {%- endif %}
 
-        {%- if config.theme.personnal_links.facebook %}
-        <a href="{{ config.theme.personnal_links.facebook }}">Facebook</a>
-        <br>
-        {%- endif %}
+            {%- if config.theme.personnal_links.facebook %}
+            <a href="{{ config.theme.personnal_links.facebook }}">Facebook</a>
+            <br>
+            {%- endif %}
 
-        {%- if config.theme.personnal_links.youtube %}
-        <a href="{{ config.theme.personnal_links.youtube }}">YouTube</a>
-        <br>
-        {%- endif %}
+            {%- if config.theme.personnal_links.youtube %}
+            <a href="{{ config.theme.personnal_links.youtube }}">YouTube</a>
+            <br>
+            {%- endif %}
 
-        {%- if config.theme.personnal_links.Instagram %}
-        <a href="{{ config.theme.personnal_links.Instagram }}">Instagram</a>
-        <br>
-        {%- endif %}
+            {%- if config.theme.personnal_links.Instagram %}
+            <a href="{{ config.theme.personnal_links.Instagram }}">Instagram</a>
+            <br>
+            {%- endif %}
 
-        {%- if config.theme.personnal_links.tiktok %}
-        <a href="{{ config.theme.personnal_links.tiktok }}">TikTok</a>
-        <br>
-        {%- endif %}
-        <br>
-        <h2>{{ config.theme.experiences_section_title | default('Experiences')}}</h2>
-        <ul>
-            {%- for experience in config.theme.experiences %}
-            <li>
-                <b>{{ experience.title }}</b>
-                <p>{{ experience.description }}</p>
-            </li>
-            {%- endfor %}
-        </ul>
-        <br>
-        <h2>{{ config.theme.education_section_title | default('Education')}}</h2>
-        <ul>
-            {%- for school in config.theme.schools %}
-            <li>
-                <b>{{ school.title }}</b>
-                <p>{{ school.description }}</p>
-            </li>
-            {%- endfor %}
-        </ul>
+            {%- if config.theme.personnal_links.tiktok %}
+            <a href="{{ config.theme.personnal_links.tiktok }}">TikTok</a>
+            <br>
+            {%- endif %}
+        </div>
+        <div class="main-informations">
+            <h2>{{ config.theme.experiences_section_title | default('Experiences')}}</h2>
+            <ul>
+                {%- for experience in config.theme.experiences %}
+                <li>
+                    <b>{{ experience.title }}</b>
+                    <p>{{ experience.description }}</p>
+                </li>
+                {%- endfor %}
+            </ul>
+            <br>
+            <h2>{{ config.theme.education_section_title | default('Education')}}</h2>
+            <ul>
+                {%- for school in config.theme.schools %}
+                <li>
+                    <b>{{ school.title }}</b>
+                    <p>{{ school.description }}</p>
+                </li>
+                {%- endfor %}
+            </ul>
+        </div>
+        <div class="footer">
+            Made with <a href="">MkDocs</a> using the <a href="https://github.com/Paul-Riviere/mkdocs-curriculum-vitae">Curriculum-vitae</a> theme.
+        </div>
     </body>
 </html>
