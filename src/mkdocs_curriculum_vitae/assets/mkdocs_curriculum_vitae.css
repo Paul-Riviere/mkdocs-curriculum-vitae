@@ -1,22 +1,42 @@
-.header { grid-area: header; }
-.basic_informations { grid-area: basic-infos; }
-.personnal_links { grid-area: links; }
-.experiences { grid-area: experiences; }
-.education { grid-area: education; }
+.header {
+  grid-area: header;
+  text-align: center;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.basic-informations {
+  grid-area: basic-infos;
+}
+
+.main-informations {
+  grid-area: main-infos;
+}
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
+    'header header header header header'
+    'basic-infos main-infos main-infos main-infos main-infos'
+    'footer footer footer footer footer';
   gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
+  background-color: #c2e2fc;
+  padding: 10px 5%;
+  overflow-wrap: break-word;
 }
 
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+
+.profile-picture-container {
   text-align: center;
-  padding: 20px 0;
+}
+
+.profile-picture {
+  width: -webkit-fill-available;
+  max-width: 200px;
 }
