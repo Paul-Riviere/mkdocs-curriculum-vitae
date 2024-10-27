@@ -1,0 +1,2 @@
+recursive-include src/mkdocs_wordart *.css *.html
+recursive-exclude * __pycache__
