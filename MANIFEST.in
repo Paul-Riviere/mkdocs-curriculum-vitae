@@ -1,2 +1,2 @@
-recursive-include src/mkdocs_wordart *.css *.html
+recursive-include src/mkdocs_curriculum_citae *.css *.html *.yml *.py
 recursive-exclude * __pycache__
