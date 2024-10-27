@@ -1,3 +1,9 @@
+## 0.1.2 (2024-10-27)
+
+### Fix
+
+- add manifest file, to include theme in the build
+
 ## 0.1.1 (2024-10-27)
 
 ### Fix
