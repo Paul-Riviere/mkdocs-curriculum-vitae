@@ -3,7 +3,7 @@
     {% include "head.html" %}
     <body class="grid-container">
         <div class="header">
-            <h1>{{ config.theme.main_title | default('MkDocs curriculum vitae')}}</h1>
+            <h1>{{ config.theme.main_title | default('MkDocs curriculum vitae') }}</h1>
         </div>
         <div class="basic-informations">
             {%- if config.theme.profile_picture %}
@@ -12,12 +12,12 @@
             </div>
             {%- endif %}
             <br>
-            <h2>{{ config.theme.basic_informations_section_title | default('Basic informations')}}</h2>
+            <h2>{{ config.theme.basic_informations_section_title | default('Basic informations') }}</h2>
             <p>{{ config.theme.firstname }} {{ config.theme.lastname }}</p>
             <p>{{ config.theme.mail }}</p>
             <p>{{ config.theme.location }}</p>
             <br>
-            <h2>{{ config.theme.personnal_links_section_title | default('Links')}}</h2>
+            <h2>{{ config.theme.personnal_links_section_title | default('Links') }}</h2>
             {%- if config.theme.personnal_links.github %}
             <a href="{{ config.theme.personnal_links.github }}">GitHub</a>
             <br>
@@ -54,7 +54,7 @@
             {%- endif %}
         </div>
         <div class="main-informations">
-            <h2>{{ config.theme.experiences_section_title | default('Experiences')}}</h2>
+            <h2>{{ config.theme.experiences_section_title | default('Experiences') }}</h2>
             <ul>
                 {%- for experience in config.theme.experiences %}
                 <li>
@@ -64,7 +64,7 @@
                 {%- endfor %}
             </ul>
             <br>
-            <h2>{{ config.theme.education_section_title | default('Education')}}</h2>
+            <h2>{{ config.theme.education_section_title | default('Education') }}</h2>
             <ul>
                 {%- for school in config.theme.schools %}
                 <li>
