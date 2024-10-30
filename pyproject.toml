@@ -24,6 +24,12 @@ dependencies = [
   "mkdocs>=1.5.3",
 ]
 
+[project.optional-dependencies]
+lint = [
+  "djlint==1.34.0",
+  "yamllint==1.32.0",
+]
+
 [project.urls]
 Documentation = "https://paul-riviere.github.io/mkdocs-curriculum-vitae/"
 Issues = "https://github.com/Paul-Riviere/mkdocs-curriculum-vitae/issues"

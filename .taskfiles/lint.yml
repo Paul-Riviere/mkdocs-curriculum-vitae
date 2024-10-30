@@ -1,0 +1,19 @@
+---
+version: "3"
+
+tasks:
+  djlint:
+    desc: Run djlint
+    cmds:
+      - .venv/bin/djlint . --configuration .config/linters/djlint.json
+
+  yamllint:
+    desc: Run yamllint
+    cmds:
+      - .venv/bin/yamllint -c .config/linters/yamllint.yml . --strict
+
+  all:
+    desc: Run all linters
+    cmds:
+      - task: djlint
+      - task: yamllint
