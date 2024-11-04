@@ -20,6 +20,10 @@ Here's an example with basic configuration :
 
 ![](docs/assets/example.png)
 
+## Usage
+
+See [documentation](https://paul-riviere.github.io/mkdocs-curriculum-vitae/how-to-use-it/).
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) file.
