@@ -57,16 +57,16 @@ experiences:
 
 ### Education
 
-- `schools`
+- `educations`
 
-Each `school` has a `title`, and a `description`.
+Each `education` has a `title`, and a `description`.
 
 ```yml
-schools:
-  - title: First school
-    description: First school description
-  - title: Second school
-    description: Second school description
+educations:
+  - title: First education
+    description: First education description
+  - title: Second education
+    description: Second education description
 ```
 
 ### Titles override
@@ -126,9 +126,9 @@ theme:
       description: First experience description
     - title: Second experience
       description: Second experience description
-  schools:
-    - title: First school
-      description: First school description
-    - title: Second school
-      description: Second school description
+  educations:
+    - title: First education
+      description: First education description
+    - title: Second education
+      description: Second education description
 ```
