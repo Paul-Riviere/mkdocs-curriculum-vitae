@@ -1,3 +1,9 @@
+## 0.1.4 (2024-11-21)
+
+### Fix
+
+- rename schools parameter to educations
+
 ## 0.1.3 (2024-10-27)
 
 ### Fix
