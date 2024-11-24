@@ -1,3 +1,9 @@
+## 0.2.0 (2024-11-24)
+
+### Feat
+
+- add dates to experiences and educations
+
 ## 0.1.4 (2024-11-21)
 
 ### Fix
