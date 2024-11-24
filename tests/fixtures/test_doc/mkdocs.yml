@@ -28,13 +28,19 @@ theme:
   experiences:
     - title: First experience
       description: First experience description
+      start_date: 2024-01-01
     - title: Second experience
       description: Second experience description
+      start_date: 2023-01-01
+      end_date: 2023-12-31
   educations:
     - title: First education
       description: First education description
+      start_date: 2024-01-01
     - title: Second education
       description: Second education description
+      start_date: 2023-01-01
+      end_date: 2023-12-31
 # Plugins
 plugins:
   - search

@@ -43,7 +43,9 @@ profile_picture: https://dummyimage.com/600x600/
 
 - `experiences`
 
-Each `experience` has a `title`, and a `description`.
+Each `experience` has a `title`, and a `description`. You can also add a `start_date` and `end_date`.
+
+You can set `start_date` without `end_date`, this will put "now" instead.
 
 Example :
 
@@ -51,22 +53,30 @@ Example :
 experiences:
   - title: First experience
     description: First experience description
+    start_date: 2024-01-01
   - title: Second experience
     description: Second experience description
+    start_date: 2023-01-01
+    end_date: 2023-12-31
 ```
 
 ### Education
 
 - `educations`
 
-Each `education` has a `title`, and a `description`.
+Each `education` has a `title`, and a `description`. You can also add a `start_date` and `end_date`.
+
+You can set `start_date` without `end_date`, this will put "now" instead.
 
 ```yml
 educations:
   - title: First education
     description: First education description
+    start_date: 2024-01-01
   - title: Second education
     description: Second education description
+    start_date: 2023-01-01
+    end_date: 2023-12-31
 ```
 
 ### Titles override
@@ -124,11 +134,17 @@ theme:
   experiences:
     - title: First experience
       description: First experience description
+      start_date: 2024-01-01
     - title: Second experience
       description: Second experience description
+      start_date: 2023-01-01
+      end_date: 2023-12-31
   educations:
     - title: First education
       description: First education description
+      start_date: 2024-01-01
     - title: Second education
       description: Second education description
+      start_date: 2023-01-01
+      end_date: 2023-12-31
 ```

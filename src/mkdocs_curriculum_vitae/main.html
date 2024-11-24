@@ -59,6 +59,9 @@
                 {%- for experience in config.theme.experiences %}
                 <li>
                     <b>{{ experience.title }}</b>
+                    {%- if experience.start_date is defined %}
+                    <p class="experience-dates">From {{ experience.start_date }} to {{ experience.end_date | default("now") }}</p>
+                    {%- endif %}
                     <p>{{ experience.description }}</p>
                 </li>
                 {%- endfor %}
@@ -69,6 +72,9 @@
                 {%- for education in config.theme.educations %}
                 <li>
                     <b>{{ education.title }}</b>
+                    {%- if education.start_date is defined %}
+                    <p class="education-dates">From {{ education.start_date }} to {{ education.end_date | default("now") }}</p>
+                    {%- endif %}
                     <p>{{ education.description }}</p>
                 </li>
                 {%- endfor %}

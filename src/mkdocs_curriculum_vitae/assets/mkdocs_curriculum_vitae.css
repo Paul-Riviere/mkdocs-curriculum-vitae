@@ -41,3 +41,7 @@
   height: -webkit-fill-available;
   max-width: 200px;
 }
+
+.education-dates, .experience-dates {
+  font-style: italic;
+}
