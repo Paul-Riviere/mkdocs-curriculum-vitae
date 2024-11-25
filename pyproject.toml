@@ -2,6 +2,7 @@
 name = "mkdocs-curriculum-vitae"
 version = "0.2.0"
 description = "MkDocs Theme for curriculum vitae"
+license = "MIT"
 readme = "README.md"
 authors = [
   {name = "Paul Riviere", email = "paolo3799@gmail.com"}
