@@ -14,9 +14,13 @@ theme:
   profile_picture: https://dummyimage.com/600x600/
   main_title: Main title override
   basic_informations_section_title: Basic infos title override
+  skills_section_title: Skills title override
   personnal_links_section_title: Links title override
   experiences_section_title: Experiences title override
   education_section_title: Education title overrride
+  skills:
+    - skill 1
+    - skill 2
   personnal_links:
     github: https://example.com/
     gitlab: https://example.com/
