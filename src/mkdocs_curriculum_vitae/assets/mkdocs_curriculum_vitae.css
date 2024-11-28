@@ -19,12 +19,16 @@
   grid-area: hobbies;
 }
 
+.certifications {
+  grid-area: certifications;
+}
+
 .grid-container {
   display: grid;
   grid-template-areas:
     'header header header header header'
     'basic-infos main-infos main-infos main-infos main-infos'
-    'basic-infos hobbies hobbies hobbies hobbies'
+    'basic-infos hobbies hobbies certifications certifications'
     'footer footer footer footer footer';
   gap: 10px;
   background-color: #c2e2fc;
