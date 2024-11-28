@@ -19,12 +19,16 @@ theme:
   experiences_section_title: Experiences title override
   education_section_title: Education title overrride
   hobbies_section_title: Hobbies title override
+  certifications_section_title: Certifications title override
   skills:
     - skill 1
     - skill 2
   hobbies:
     - hobby 1
     - hobby 2
+  certifications:
+    - certification 1
+    - certification 2
   personnal_links:
     github: https://example.com/
     gitlab: https://example.com/

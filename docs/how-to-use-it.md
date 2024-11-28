@@ -89,6 +89,26 @@ skills:
   - skill 2
 ```
 
+### Hobbies
+
+- `hobbies`
+
+```yml
+hobbies:
+  - hobby 1
+  - hobby 2
+```
+
+### Certifications
+
+- `certifications`
+
+```yml
+certifications:
+  - certification 1
+  - certification 2
+```
+
 ### Personnal links
 
 You can add links to your CV, those variables are optionnal. The link will appear only if the associated variable is defined.
@@ -137,12 +157,16 @@ theme:
   experiences_section_title: Experiences title override
   education_section_title: Education title overrride
   hobbies_section_title: Hobbies title override
+  certifications_section_title: Certifications title override
   skills:
     - skill 1
     - skill 2
   hobbies:
     - hobby 1
     - hobby 2
+  certifications:
+    - certification 1
+    - certification 2
   personnal_links:
     github: https://example.com/
     gitlab: https://example.com/
