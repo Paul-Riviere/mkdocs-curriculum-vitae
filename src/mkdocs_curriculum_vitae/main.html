@@ -17,6 +17,15 @@
             <p>{{ config.theme.mail }}</p>
             <p>{{ config.theme.location }}</p>
             <br>
+            <h2>{{ config.theme.skills_section_title | default('Skills') }}</h2>
+            <ul>
+                {%- for skill in config.theme.skills %}
+                <li>
+                    <p>{{ skill }}</p>
+                </li>
+                {%- endfor %}
+            </ul>
+            <br>
             <h2>{{ config.theme.personnal_links_section_title | default('Links') }}</h2>
             {%- if config.theme.personnal_links.github %}
             <a href="{{ config.theme.personnal_links.github }}">GitHub</a>

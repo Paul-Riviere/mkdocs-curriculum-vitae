@@ -79,16 +79,14 @@ educations:
     end_date: 2023-12-31
 ```
 
-### Titles override
+### Skills
 
-You can override titles with ease with those variables. You don't need to define them, as they have default values.
+- `skills`
 
 ```yml
-main_title: Main title override
-basic_informations_section_title: Basic infos title override
-personnal_links_section_title: Links title override
-experiences_section_title: Experiences title override
-education_section_title: Education title overrride
+skills:
+  - skill 1
+  - skill 2
 ```
 
 ### Personnal links
@@ -106,6 +104,19 @@ personnal_links:
   tiktok: https://example.com/
 ```
 
+### Titles override
+
+You can override titles with ease with those variables. You don't need to define them, as they have default values.
+
+```yml
+main_title: Main title override
+basic_informations_section_title: Basic infos title override
+personnal_links_section_title: Links title override
+experiences_section_title: Experiences title override
+education_section_title: Education title overrride
+skills_section_title: Skills title override
+```
+
 ### Full Example
 
 ```yml
@@ -120,9 +131,13 @@ theme:
   profile_picture: https://dummyimage.com/600x600/
   main_title: Main title override
   basic_informations_section_title: Basic infos title override
+  skills_section_title: Skills title override
   personnal_links_section_title: Links title override
   experiences_section_title: Experiences title override
   education_section_title: Education title overrride
+  skills:
+    - skill 1
+    - skill 2
   personnal_links:
     github: https://example.com/
     gitlab: https://example.com/
