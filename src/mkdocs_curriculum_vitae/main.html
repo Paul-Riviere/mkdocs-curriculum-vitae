@@ -89,6 +89,16 @@
                 {%- endfor %}
             </ul>
         </div>
+        <div class="hobbies">
+            <h2>{{ config.theme.hobbies_section_title | default('Hobbies') }}</h2>
+            <ul>
+                {%- for hobby in config.theme.hobbies %}
+                <li>
+                    <p>{{ hobby }}</p>
+                </li>
+                {%- endfor %}
+            </ul>
+        </div>
         <div class="footer">
             Made with <a href="">MkDocs</a> using the <a href="https://github.com/Paul-Riviere/mkdocs-curriculum-vitae">Curriculum-vitae</a> theme.
         </div>

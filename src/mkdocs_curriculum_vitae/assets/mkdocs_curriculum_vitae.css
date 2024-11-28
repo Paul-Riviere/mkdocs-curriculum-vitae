@@ -15,11 +15,16 @@
   grid-area: main-infos;
 }
 
+.hobbies {
+  grid-area: hobbies;
+}
+
 .grid-container {
   display: grid;
   grid-template-areas:
     'header header header header header'
     'basic-infos main-infos main-infos main-infos main-infos'
+    'basic-infos hobbies hobbies hobbies hobbies'
     'footer footer footer footer footer';
   gap: 10px;
   background-color: #c2e2fc;

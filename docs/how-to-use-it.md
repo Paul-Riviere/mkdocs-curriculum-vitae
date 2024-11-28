@@ -115,6 +115,7 @@ personnal_links_section_title: Links title override
 experiences_section_title: Experiences title override
 education_section_title: Education title overrride
 skills_section_title: Skills title override
+hobbies_section_title: Hobbies title override
 ```
 
 ### Full Example
@@ -135,9 +136,13 @@ theme:
   personnal_links_section_title: Links title override
   experiences_section_title: Experiences title override
   education_section_title: Education title overrride
+  hobbies_section_title: Hobbies title override
   skills:
     - skill 1
     - skill 2
+  hobbies:
+    - hobby 1
+    - hobby 2
   personnal_links:
     github: https://example.com/
     gitlab: https://example.com/
