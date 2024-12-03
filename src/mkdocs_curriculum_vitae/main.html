@@ -28,38 +28,31 @@
             <br>
             <h2>{{ config.theme.personnal_links_section_title | default('Links') }}</h2>
             {%- if config.theme.personnal_links.github %}
-            <a href="{{ config.theme.personnal_links.github }}">GitHub</a>
-            <br>
+            <a href="{{ config.theme.personnal_links.github }}"><i class="fa-brands fa-github fa-xl"></i></a>
             {%- endif %}
 
             {%- if config.theme.personnal_links.gitlab %}
-            <a href="{{ config.theme.personnal_links.gitlab }}">GitLab</a>
-            <br>
+            <a href="{{ config.theme.personnal_links.gitlab }}"><i class="fa-brands fa-gitlab fa-xl"></i></a>
             {%- endif %}
 
             {%- if config.theme.personnal_links.linkedin %}
-            <a href="{{ config.theme.personnal_links.linkedin }}">LinkedIn</a>
-            <br>
+            <a href="{{ config.theme.personnal_links.linkedin }}"><i class="fa-brands fa-linkedin fa-xl"></i></a>
             {%- endif %}
 
             {%- if config.theme.personnal_links.facebook %}
-            <a href="{{ config.theme.personnal_links.facebook }}">Facebook</a>
-            <br>
+            <a href="{{ config.theme.personnal_links.facebook }}"><i class="fa-brands fa-facebook fa-xl"></i></a>
             {%- endif %}
 
             {%- if config.theme.personnal_links.youtube %}
-            <a href="{{ config.theme.personnal_links.youtube }}">YouTube</a>
-            <br>
+            <a href="{{ config.theme.personnal_links.youtube }}"><i class="fa-brands fa-youtube fa-xl"></i></a>
             {%- endif %}
 
             {%- if config.theme.personnal_links.Instagram %}
-            <a href="{{ config.theme.personnal_links.Instagram }}">Instagram</a>
-            <br>
+            <a href="{{ config.theme.personnal_links.Instagram }}"><i class="fa-brands fa-instagram fa-xl"></i></a>
             {%- endif %}
 
             {%- if config.theme.personnal_links.tiktok %}
-            <a href="{{ config.theme.personnal_links.tiktok }}">TikTok</a>
-            <br>
+            <a href="{{ config.theme.personnal_links.tiktok }}"><i class="fa-brands fa-tiktok fa-xl"></i></a>
             {%- endif %}
         </div>
         <div class="main-informations">
@@ -112,5 +105,6 @@
         <div class="footer">
             Made with <a href="">MkDocs</a> using the <a href="https://github.com/Paul-Riviere/mkdocs-curriculum-vitae">Curriculum-vitae</a> theme.
         </div>
+        {% include "scripts.html" %}
     </body>
 </html>
