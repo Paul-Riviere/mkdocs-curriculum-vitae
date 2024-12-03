@@ -1,3 +1,9 @@
+## 0.6.0 (2024-12-03)
+
+### Feat
+
+- replace links with font-awesome icons
+
 ## 0.5.0 (2024-11-28)
 
 ### Feat
