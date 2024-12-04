@@ -1,0 +1,38 @@
+/*
+#############
+DEFAULT THEME
+#############
+*/
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header'
+        'basic-infos main-infos main-infos main-infos main-infos'
+        'basic-infos hobbies hobbies certifications certifications'
+        'footer footer footer footer footer';
+    gap: 10px;
+    background-color: #c2e2fc;
+    padding: 10px 5%;
+    overflow-wrap: break-word;
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+.profile-picture-container {
+    text-align: center;
+}
+
+.profile-picture {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    max-width: 200px;
+}
+
+.education-dates,
+.experience-dates {
+    font-style: italic;
+}
