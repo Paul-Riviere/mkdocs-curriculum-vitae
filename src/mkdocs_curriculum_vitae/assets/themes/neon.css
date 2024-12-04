@@ -1,0 +1,49 @@
+/*
+##########
+NEON THEME
+##########
+*/
+
+body {
+    color: white;
+    text-shadow:
+        0px 0px 5px #00e8ff,
+        0px 0px 10px #00e8ff,
+        0px 0px 15px #00e8ff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header'
+        'basic-infos main-infos main-infos main-infos main-infos'
+        'basic-infos hobbies hobbies certifications certifications'
+        'footer footer footer footer footer';
+    gap: 10px;
+    background-color: #000000;
+    padding: 10px 5%;
+    overflow-wrap: break-word;
+}
+
+.grid-container>div {
+    background-color: rgb(255 41 182 / 89%);
+    box-shadow:
+        0px 0px 6px 3px #00e8ff,
+        0px 0px 7px 0px #00e8ff;
+    padding: 20px;
+}
+
+.profile-picture-container {
+    text-align: center;
+}
+
+.profile-picture {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    max-width: 200px;
+}
+
+.education-dates,
+.experience-dates {
+    font-style: italic;
+}

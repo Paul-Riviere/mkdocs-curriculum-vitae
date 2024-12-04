@@ -13,6 +13,26 @@ Next, you just have to create a `docs` folder in your repo, and only put an empt
 
 What you have to do is play with the theme variables :
 
+### Theming
+
+Choosing a theme is optional, without the variable, the default theme will be applied to your CV.
+
+To select one, you just have to define the `mkcv_theme` variable :
+
+```yml
+# mkdocs.yml
+
+theme:
+  name: curriculum-vitae
+  mkcv_theme: default
+```
+
+Multiple themes are available, that affects CSS :
+- default
+  ![](assets/themes/default.png)
+- neon
+  ![](assets/themes/neon.png)
+
 ### Basic informations
 
 - `firstname`

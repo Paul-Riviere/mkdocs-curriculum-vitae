@@ -20,7 +20,7 @@ You can see a [live exmple here](https://paul-riviere.github.io/mkdocs-curriculu
 
 Here's an example with basic configuration :
 
-![](docs/assets/example.png)
+![](docs/assets/themes/default.png)
 
 ## Usage
 
