@@ -6,7 +6,6 @@ DEFAULT BASE STYLE
 
 .header {
     grid-area: header;
-    text-align: center;
 }
 
 .footer {
