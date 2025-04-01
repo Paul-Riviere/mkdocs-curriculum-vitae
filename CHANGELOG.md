@@ -1,3 +1,10 @@
+## 0.8.0 (2025-04-01)
+
+### Feat
+
+- add functionnal layouts, working with themes, doc written
+- add layout variable and logic, put default config theme variables values in the mkdocs_theme file
+
 ## 0.7.1 (2024-12-04)
 
 ### Fix
