@@ -1,3 +1,13 @@
 ---
 static_templates:
   - 404.html
+
+# Titles
+main_title: "MkDocs curriculum vitae"
+basic_informations_section_title: "Basic informations"
+skills_section_title: "Skills"
+personnal_links_section_title: "Links"
+experiences_section_title: "Experiences"
+education_section_title: "Education"
+hobbies_section_title: "Hobbies"
+certifications_section_title: "Certifications"
