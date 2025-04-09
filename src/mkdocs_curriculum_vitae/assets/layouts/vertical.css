@@ -1,0 +1,15 @@
+/*
+##############
+VERTICAL LAYOUT
+##############
+*/
+
+.grid-container {
+    grid-template-areas:
+        'header'
+        'basic-infos'
+        'main-infos'
+        'hobbies'
+        'certifications'
+        'footer';
+}

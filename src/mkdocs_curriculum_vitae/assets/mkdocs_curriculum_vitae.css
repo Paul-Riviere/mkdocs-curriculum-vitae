@@ -4,6 +4,37 @@ DEFAULT BASE STYLE
 ##################
 */
 
+.grid-container {
+    display: grid;
+    gap: 10px;
+    padding: 10px 5%;
+    overflow-wrap: break-word;
+}
+
+.header {
+    text-align: center;
+}
+
+.grid-container>div {
+    padding: 20px;
+}
+
+.profile-picture-container {
+    text-align: center;
+}
+
+.profile-picture {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    max-width: 200px;
+}
+
+/*
+##########
+GRID AREAS
+##########
+*/
+
 .header {
     grid-area: header;
 }

@@ -1,0 +1,13 @@
+/*
+##############
+DEFAULT LAYOUT
+##############
+*/
+
+.grid-container {
+    grid-template-areas:
+        'header header header header header'
+        'basic-infos main-infos main-infos main-infos main-infos'
+        'basic-infos hobbies hobbies certifications certifications'
+        'footer footer footer footer footer';
+}

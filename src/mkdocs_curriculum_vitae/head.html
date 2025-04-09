@@ -5,7 +5,7 @@
     <meta name="keywords" content="mkdocs,documentation,curriculum-vitae"/>
     <link href="assets/mkdocs_curriculum_vitae.css" rel="stylesheet">
     <link href="assets/themes/{{ config.theme.mkcv_theme | default('default') }}.css" rel="stylesheet">
-    <link href="layouts/{{ config.theme.mkcv_layout | default('default') }}/layout.css" rel="stylesheet">
+    <link href="assets/layouts/{{ config.theme.mkcv_layout | default('default') }}.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     {%- for path in config.extra_css %}
     <link href="{{ path | url }}" rel="stylesheet">
