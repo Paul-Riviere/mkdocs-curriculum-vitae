@@ -2,7 +2,6 @@
     "profile": "jinja",
     "use_gitignore": true,
     "per-file-ignores": {
-        "src/mkdocs_curriculum_vitae/main.html": "H016, H030, H031",
-        "src/mkdocs_curriculum_vitae/layouts": "H006"
+        "src/mkdocs_curriculum_vitae/main.html": "H006, H016, H030, H031"
     }
 }
