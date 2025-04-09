@@ -1,3 +1,9 @@
+## 0.8.1 (2025-04-09)
+
+### Fix
+
+- refactor layout, they now only change css grid template and no longer html
+
 ## 0.8.0 (2025-04-01)
 
 ### Feat
