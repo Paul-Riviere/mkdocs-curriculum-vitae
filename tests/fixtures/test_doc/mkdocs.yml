@@ -29,8 +29,9 @@ theme:
     - hobby 1
     - hobby 2
   certifications:
-    - certification 1
-    - certification 2
+    - name: certification 1
+    - name: certification 2
+      link: htttps://exemple.com
   personnal_links:
     github: https://example.com/
     gitlab: https://example.com/
