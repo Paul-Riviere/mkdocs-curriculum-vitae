@@ -1,3 +1,9 @@
+## 0.9.0 (2025-04-12)
+
+### Feat
+
+- add links to certifications, fix documentation full example, theme/layout example was forgotten
+
 ## 0.8.1 (2025-04-09)
 
 ### Fix
