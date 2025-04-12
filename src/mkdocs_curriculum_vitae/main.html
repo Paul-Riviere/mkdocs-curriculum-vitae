@@ -97,7 +97,11 @@
             <ul>
                 {%- for certification in config.theme.certifications %}
                 <li>
-                    <p>{{ certification }}</p>
+                    {%- if certification.link is defined %}
+                    <a href="{{ certification.link }}">{{ certification.name }}</a>
+                    {%- else %}
+                    <p>{{ certification.name }}</p>
+                    {%- endif %}
                 </li>
                 {%- endfor %}
             </ul>

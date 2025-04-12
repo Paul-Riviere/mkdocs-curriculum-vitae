@@ -145,10 +145,13 @@ hobbies:
 
 - `certifications`
 
+Each `certification` must have a `name`, and optionnaly you can specify a `link` if you want to.
+
 ```yml
 certifications:
-  - certification 1
-  - certification 2
+  - name: certification 1
+  - name: certification 2
+    link: htttps://exemple.com
 ```
 
 ### Personnal links
@@ -187,6 +190,8 @@ hobbies_section_title: Hobbies title override
 
 theme:
   name: curriculum-vitae
+  mkcv_layout: default
+  mkcv_theme: default
   firstname: John
   lastname: Doe
   mail: john.doe@example.com
@@ -207,8 +212,9 @@ theme:
     - hobby 1
     - hobby 2
   certifications:
-    - certification 1
-    - certification 2
+    - name: certification 1
+    - name: certification 2
+      link: htttps://exemple.com
   personnal_links:
     github: https://example.com/
     gitlab: https://example.com/
