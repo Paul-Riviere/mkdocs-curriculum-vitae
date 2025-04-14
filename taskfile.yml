@@ -9,6 +9,7 @@ vars:
 includes:
   lint: .taskfiles/lint.yml
   mkdocs: .taskfiles/mkdocs.yml
+  documentation: .taskfiles/documentation.yml
 
 tasks:
   default:
@@ -23,6 +24,8 @@ tasks:
         {{.PYTHON}} -m venv .venv
         .venv/bin/pip install --upgrade pip build twine
         .venv/bin/pip install -e .[lint]
+        .venv/bin/shot-scraper install
+        .venv/bin/playwright install-deps
 
   clean:
     desc: Cleanup project
