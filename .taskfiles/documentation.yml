@@ -1,0 +1,19 @@
+---
+version: "3"
+
+tasks:
+  generate-screenshots:
+    desc: Generates screenshots of each theme/layout for the documentation.
+    cmds:
+      # Screenshot layouts
+      - .venv/bin/shot-scraper -w 1920 -o docs/assets/layouts/default.png http://localhost:8002
+      - sed -i "s/mkcv_layout:\ default/mkcv_layout:\ vertical/g" tests/fixtures/test_doc/mkdocs.yml
+      - .venv/bin/shot-scraper -w 1920 -o docs/assets/layouts/vertical.png http://localhost:8002
+      # Reset layout config
+      - sed -i "s/mkcv_layout:\ vertical/mkcv_layout:\ default/g" tests/fixtures/test_doc/mkdocs.yml
+      # Screenshot themes
+      - .venv/bin/shot-scraper -w 1920 -o docs/assets/themes/default.png http://localhost:8002
+      - sed -i "s/mkcv_theme:\ default/mkcv_theme:\ neon/g" tests/fixtures/test_doc/mkdocs.yml
+      - .venv/bin/shot-scraper -w 1920 -o docs/assets/themes/neon.png http://localhost:8002
+      # Reset theme config
+      - sed -i "s/mkcv_theme:\ neon/mkcv_theme:\ default/g" tests/fixtures/test_doc/mkdocs.yml

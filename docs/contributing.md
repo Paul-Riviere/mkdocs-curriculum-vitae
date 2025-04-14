@@ -75,6 +75,14 @@ git clone https://github.com/your-username/mkdocs-curriculum-vitae.git
 task bootstrap
 ```
 
+- When you're done, please run the test doc using the task command, and in another shell run the task command to generate screenshots:
+```sh
+# Shell 1
+task mkdocs:serve-test-doc
+# Shell 2
+task documentation:generate-screenshots
+```
+
 ## 📝 Coding Guidelines
 
 Please follow these coding standards when contributing:
