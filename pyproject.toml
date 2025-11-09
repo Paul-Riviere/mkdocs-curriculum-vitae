@@ -1,6 +1,6 @@
 [project]
 name = "mkdocs-curriculum-vitae"
-version = "0.9.0"
+version = "0.10.0"
 description = "MkDocs Theme for curriculum vitae"
 license = {file = "LICENSE"}
 readme = "README.md"

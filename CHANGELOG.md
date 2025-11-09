@@ -1,3 +1,9 @@
+## 0.10.0 (2025-11-09)
+
+### Feat
+
+- add new sub divs into containers to divide into sections
+
 ## 0.9.0 (2025-04-12)
 
 ### Feat
