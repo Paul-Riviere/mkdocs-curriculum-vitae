@@ -8,7 +8,7 @@ site_description: MkDocs curriculum vitae Theme
 theme:
   name: curriculum-vitae
   mkcv_layout: default
-  mkcv_theme: default
+  mkcv_theme: minimalist
   firstname: John
   lastname: Doe
   mail: john.doe@example.com
