@@ -1,3 +1,10 @@
+## 0.11.0 (2025-11-09)
+
+### Feat
+
+- add minimalist theme
+- add new sub divs into containers to divide into sections
+
 ## 0.10.0 (2025-11-09)
 
 ### Feat
