@@ -1,0 +1,28 @@
+/*
+#############
+MINIMALIST THEME
+#############
+*/
+
+.grid-container>div {
+    background-color: #f2f2f2;
+}
+
+.basic-informations-section:after,
+.skills-section:after,
+.experience-section:after {
+    content: " ";
+    height: 1px;
+    width: 100%;
+    background: #dddddd;
+    display: block;
+}
+
+.education-dates,
+.experience-dates {
+    font-style: italic;
+}
+
+a:link {
+  color: black;
+}
