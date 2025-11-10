@@ -12,14 +12,14 @@
             </div>
             {%- endif %}
             <br>
-            <div class="basic-informations-section">
+            <section class="basic-informations-section">
                 <h2>{{ config.theme.basic_informations_section_title }}</h2>
                 <p>{{ config.theme.firstname }} {{ config.theme.lastname }}</p>
                 <p>{{ config.theme.mail }}</p>
                 <p>{{ config.theme.location }}</p>
-            </div>
+            </section>
             <br>
-            <div class="skills-section">
+            <section class="skills-section">
                 <h2>{{ config.theme.skills_section_title }}</h2>
                 <ul>
                     {%- for skill in config.theme.skills %}
@@ -28,9 +28,9 @@
                     </li>
                     {%- endfor %}
                 </ul>
-            </div>
+            </section>
             <br>
-            <div class="personnal-links-section">
+            <section class="personnal-links-section">
                 <h2>{{ config.theme.personnal_links_section_title }}</h2>
                 {%- if config.theme.personnal_links.github %}
                 <a href="{{ config.theme.personnal_links.github }}"><i class="fa-brands fa-github fa-xl"></i></a>
@@ -59,10 +59,10 @@
                 {%- if config.theme.personnal_links.tiktok %}
                 <a href="{{ config.theme.personnal_links.tiktok }}"><i class="fa-brands fa-tiktok fa-xl"></i></a>
                 {%- endif %}
-            </div>
+            </section>
         </div>
         <div class="main-informations">
-            <div class="experience-section">
+            <section class="experience-section">
                 <h2>{{ config.theme.experiences_section_title }}</h2>
                 <ul>
                     {%- for experience in config.theme.experiences %}
@@ -75,9 +75,9 @@
                     </li>
                     {%- endfor %}
                 </ul>
-            </div>
+            </section>
             <br>
-            <div class="education-section">
+            <section class="education-section">
                 <h2>{{ config.theme.education_section_title }}</h2>
                 <ul>
                     {%- for education in config.theme.educations %}
@@ -90,7 +90,7 @@
                     </li>
                     {%- endfor %}
                 </ul>
-            </div>
+            </section>
         </div>
         <div class="hobbies">
             <h2>{{ config.theme.hobbies_section_title }}</h2>
