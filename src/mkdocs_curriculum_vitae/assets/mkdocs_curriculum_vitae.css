@@ -29,6 +29,11 @@ DEFAULT BASE STYLE
     max-width: 200px;
 }
 
+.all-icons-container {
+    display: flex;
+    gap: 4px;
+}
+
 /*
 ##########
 GRID AREAS

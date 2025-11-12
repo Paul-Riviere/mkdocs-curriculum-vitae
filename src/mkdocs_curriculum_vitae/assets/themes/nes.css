@@ -1,0 +1,118 @@
+/*
+##########
+NES THEME
+##########
+*/
+
+/* Copyright 2012 The Press Start 2P Project Authors (cody@zone38.net), with Reserved Font Name "Press Start 2P". */
+@font-face {
+  font-family: Press-Start-2P; /* set name */
+  src: url(../fonts/PressStart2P-Regular.ttf); /* url of the font */
+}
+
+html {
+    font-family: "Press-Start-2P";
+}
+
+html {
+    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABFklEQVRYR9WXURLDIAhE6/0PbSdOtUpcd1Gnpv1KGpTHBpCE1/cXq+vrMph7dGvXZTtpfW10DCA5jrH1H0Jhs5E0hnZdCR+vb5S8Nn8mQCeS9BdSalYJqMBjAGzq59xAESN7VFVUgV8AZB/dZBR7QTFDCqGquvUBVVoEtgIwpQRzmANSFHgWQKExHdIrPeuMvQNDarXe6nC/AutgV3JW+6bgqQLeV8FekRtgV+ToDKEKnACYKsfZjjkam7a0ZpYTytwmgainpC3HvwBocgKOxqRjehoR9DFKNFYtOwCGYCszobeCbl26N6yyQ6g8X/Wex/rBPsNEV6qAMaJPMynIHQCoSqS9JSMmwef51LflTgCRszU7DvAGiV6mHWfsaVUAAAAASUVORK5CYII=), auto;
+}
+
+a {
+    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC) 14 0, pointer;
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/* Profile picture */
+
+.profile-picture {
+    border: solid black 4px;
+    padding: 20px;
+}
+
+/* Lists */
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    position: relative;
+}
+
+li::before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: -30px;
+    content: "";
+    width: 2px;
+    height: 2px;
+    color: #212529;
+    box-shadow: 8px 2px, 10px 2px, 6px 4px, 8px 4px, 10px 4px, 12px 4px, 4px 6px, 6px 6px, 12px 6px, 14px 6px, 4px 8px, 6px 8px, 12px 8px, 14px 8px, 6px 10px, 8px 10px, 10px 10px, 12px 10px, 8px 12px, 10px 12px;
+}
+
+/* Sections */
+
+section {
+    position: relative;
+    padding: 1.5rem 2rem;
+    border-color: #000;
+    border-style: solid;
+    border-width: 4px;
+}
+
+section>h2 {
+    display: table;
+    padding: 0 .5rem;
+    margin: -1.8rem 0 1rem;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+/* Icons */
+
+.icon-container > svg {
+    display: none;
+}
+
+.icon-container::before {
+    content: " ";
+    height: 60px;
+    width: min-content;
+    min-width: 60px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    image-rendering: pixelated;
+}
+
+.github-icon::before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABxSURBVDhPzZIxFsAgCEMT739nOlD6MLVUOvUvDoSIEcKx8+zCoc1m715JY2MuOZWJ1vhlAgAgCQCYJthtRtIun9DhZwYRzA7LEHOhImvogXqi2qy/onXoHpjZJdLmQE3ai6QGywxUVHEz6BJX1XM/wwMLBCwVehwm+wAAAABJRU5ErkJggg==);
+}
+
+.gitlab-icon::before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACtSURBVDhPpZPRDcIwDESf0y0q8Y3UAZiAMZiBYZiBMZiAAZD4Zo7I/ODUSZMgNfeTxL47n2RFAFRV2QERkeDFn/OSMyrwHFXVkHV3IBmYcy9FjTOcQFRVe1N7ODxe4wkCwLxE5iWWvSY8P0vwz6jWDwDT7Z0VS1KtZpqUoGfSEmNb8M14Pa6P0+98rqVy0GYLiWBidy/F1BIY4t0lAabLVkwtgcELWmIAYfA7fwErHUhq9+YiugAAAABJRU5ErkJggg==);
+}
+
+.linkedin-icon::before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABcSURBVDhPY2RgYGBQLd/5n4EMcLvTnZGRXM0wADfgVocbXFCtYheyGryACV2AVECxAbQLA0J8GCDKC8ia0flEGYAPEG0ArqglygBcmhmINQAfGHgDKE9IDBRmZwBjdyW+qUPi0wAAAABJRU5ErkJggg==);
+}
+
+.facebook-icon::before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABpSURBVDhPzZGxDYAwDATP7AY9GQJmIkNAT4aDCsmJQhxIk+ts6U9+WQDGZb/4QfBOpDZ8bnM0T+sBwBBtX0jDGlNQCgOYFbTgOVtjXmDRLMhWsHrz9QslmgXZCpr+v9CBIHgn6bKW4J3cLVQgFHV0cyEAAAAASUVORK5CYII=);
+}
+
+.youtube-icon::before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABTSURBVDhPzdMxDgAgCEPRX+9/Z5xcTICqix1J+sIAAggILiKQbssrYx+cJgfCWywH8JAaoEd6gBrxAHLEB6R9AjaQlLGAokwLNGWAn0/ZjHh85wnijxIXfJdUBgAAAABJRU5ErkJggg==);
+}
+
+.instagram-icon::before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADQSURBVDhPnZC7DcIwFEXPQyQj0FOAkBgAJggLsAmCFqdFMAoLZIKkjBQK2AAaelKYBps4ikPIqe773Cs/Cx9UkGqju6DKpQAIPcwGVS5Fqub9a+FueIjDzOqBEV3McZgRh5mzawP6Yk+ov6D6TNrmBVutglRXqddNPRWkumCrBwDr8uykd8F4Gv+gKbCphy/gH+R+nGiA0ebmDC6yc+q5Pji1mXsDfmECep8wjHKGUf4NeJym7kYL19XKagEwZ/h4JuN6C4BZkoiYwhfSZgZ4A9SCeAEG7J7uAAAAAElFTkSuQmCC);
+}
+
+
+.tiktok-icon::before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACtSURBVDhPnZNBDoMwDARnube39l3pS9t3wQ0eYA40hDgxVRnJErbiVbwOAjAz4wKSpLNmLVOV2+1R5VvxBObRgD2M5I/YXwJZhHksZ6oOR0/A32bwI0UYyZcA2AW0TFX06Pk9cHT7/iwRYKT6Nr1Z83zHem8D1vPASGBvXw5pBDKRD55GQHxqT34wwPeJzmOpOiOjFQI0/4KkY1qaA18aga36Kt9BY0bkVV5AklbwoPLnQSOFjgAAAABJRU5ErkJggg==);
+}
