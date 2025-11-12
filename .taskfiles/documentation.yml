@@ -17,5 +17,7 @@ tasks:
       - .venv/bin/shot-scraper -w 1920 -o docs/assets/themes/neon.png http://localhost:8002
       - sed -i "s/mkcv_theme:\ neon/mkcv_theme:\ minimalist/g" tests/fixtures/test_doc/mkdocs.yml
       - .venv/bin/shot-scraper -w 1920 -o docs/assets/themes/minimalist.png http://localhost:8002
+      - sed -i "s/mkcv_theme:\ minimalist/mkcv_theme:\ nes/g" tests/fixtures/test_doc/mkdocs.yml
+      - .venv/bin/shot-scraper -w 1920 -o docs/assets/themes/nes.png http://localhost:8002
       # Reset theme config
-      - sed -i "s/mkcv_theme:\ minimalist/mkcv_theme:\ default/g" tests/fixtures/test_doc/mkdocs.yml
+      - sed -i "s/mkcv_theme:\ nes/mkcv_theme:\ default/g" tests/fixtures/test_doc/mkdocs.yml

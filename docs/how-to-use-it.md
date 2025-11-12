@@ -54,7 +54,9 @@ Multiple themes are available, that affects CSS :
   ![](assets/themes/default.png)
 - **neon**
   ![](assets/themes/neon.png)
-- **neon**
+- **nes**
+  ![](assets/themes/nes.png)
+- **minimalist**
   ![](assets/themes/minimalist.png)
 
 ### Basic informations
@@ -169,6 +171,7 @@ personnal_links:
   youtube: https://example.com/
   Instagram: https://example.com/
   tiktok: https://example.com/
+  x: https://example.com/
 ```
 
 ### Titles override
@@ -225,6 +228,7 @@ theme:
     youtube: https://example.com/
     Instagram: https://example.com/
     tiktok: https://example.com/
+    x: https://example.com/
   experiences:
     - title: First experience
       description: First experience description

@@ -32,33 +32,71 @@
             <br>
             <section class="personnal-links-section">
                 <h2>{{ config.theme.personnal_links_section_title }}</h2>
-                {%- if config.theme.personnal_links.github %}
-                <a href="{{ config.theme.personnal_links.github }}"><i class="fa-brands fa-github fa-xl"></i></a>
-                {%- endif %}
-        
-                {%- if config.theme.personnal_links.gitlab %}
-                <a href="{{ config.theme.personnal_links.gitlab }}"><i class="fa-brands fa-gitlab fa-xl"></i></a>
-                {%- endif %}
-        
-                {%- if config.theme.personnal_links.linkedin %}
-                <a href="{{ config.theme.personnal_links.linkedin }}"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-                {%- endif %}
-        
-                {%- if config.theme.personnal_links.facebook %}
-                <a href="{{ config.theme.personnal_links.facebook }}"><i class="fa-brands fa-facebook fa-xl"></i></a>
-                {%- endif %}
-        
-                {%- if config.theme.personnal_links.youtube %}
-                <a href="{{ config.theme.personnal_links.youtube }}"><i class="fa-brands fa-youtube fa-xl"></i></a>
-                {%- endif %}
-        
-                {%- if config.theme.personnal_links.Instagram %}
-                <a href="{{ config.theme.personnal_links.Instagram }}"><i class="fa-brands fa-instagram fa-xl"></i></a>
-                {%- endif %}
-        
-                {%- if config.theme.personnal_links.tiktok %}
-                <a href="{{ config.theme.personnal_links.tiktok }}"><i class="fa-brands fa-tiktok fa-xl"></i></a>
-                {%- endif %}
+                <div class="all-icons-container">
+                    {%- if config.theme.personnal_links.github %}
+                    <a href="{{ config.theme.personnal_links.github }}">
+                        <span class="icon-container github-icon">
+                            <i class="fa-brands fa-github fa-xl"></i>
+                        </span>
+                    </a>
+                    {%- endif %}
+            
+                    {%- if config.theme.personnal_links.gitlab %}
+                    <a href="{{ config.theme.personnal_links.gitlab }}">
+                        <div class="icon-container gitlab-icon">
+                            <i class="fa-brands fa-gitlab fa-xl"></i>
+                        </div>
+                    </a>
+                    {%- endif %}
+            
+                    {%- if config.theme.personnal_links.linkedin %}
+                    <a href="{{ config.theme.personnal_links.linkedin }}">
+                        <div class="icon-container linkedin-icon">
+                            <i class="fa-brands fa-linkedin fa-xl"></i>
+                        </div>
+                    </a>
+                    {%- endif %}
+            
+                    {%- if config.theme.personnal_links.facebook %}
+                    <a href="{{ config.theme.personnal_links.facebook }}">
+                        <div class="icon-container facebook-icon">
+                            <i class="fa-brands fa-facebook fa-xl"></i>
+                        </div>
+                    </a>
+                    {%- endif %}
+            
+                    {%- if config.theme.personnal_links.youtube %}
+                    <a href="{{ config.theme.personnal_links.youtube }}">
+                        <div class="icon-container youtube-icon">
+                            <i class="fa-brands fa-youtube fa-xl"></i>
+                        </div>
+                    </a>
+                    {%- endif %}
+            
+                    {%- if config.theme.personnal_links.Instagram %}
+                    <a href="{{ config.theme.personnal_links.Instagram }}">
+                        <div class="icon-container instagram-icon">
+                            <i class="fa-brands fa-instagram fa-xl"></i>
+                        </div>
+                    </a>
+                    {%- endif %}
+            
+                    {%- if config.theme.personnal_links.tiktok %}
+                    <a href="{{ config.theme.personnal_links.tiktok }}">
+                        <div class="icon-container tiktok-icon">
+                            <i class="fa-brands fa-tiktok fa-xl"></i>
+                        </div>
+                    </a>
+                    {%- endif %}
+
+                    {%- if config.theme.personnal_links.x %}
+                    <a href="{{ config.theme.personnal_links.x }}">
+                        <div class="icon-container x-icon">
+                            <i class="fa-brands fa-x-twitter fa-xl"></i>
+                        </div>
+                    </a>
+                    {%- endif %}
+                </div>
             </section>
         </div>
         <div class="main-informations">
@@ -93,28 +131,32 @@
             </section>
         </div>
         <div class="hobbies">
-            <h2>{{ config.theme.hobbies_section_title }}</h2>
-            <ul>
-                {%- for hobby in config.theme.hobbies %}
-                <li>
-                    <p>{{ hobby }}</p>
-                </li>
-                {%- endfor %}
-            </ul>
+            <section class="hobbies-section">
+                <h2>{{ config.theme.hobbies_section_title }}</h2>
+                <ul>
+                    {%- for hobby in config.theme.hobbies %}
+                    <li>
+                        <p>{{ hobby }}</p>
+                    </li>
+                    {%- endfor %}
+                </ul>
+            </section>
         </div>
         <div class="certifications">
-            <h2>{{ config.theme.certifications_section_title }}</h2>
-            <ul>
-                {%- for certification in config.theme.certifications %}
-                <li>
-                    {%- if certification.link is defined %}
-                    <a href="{{ certification.link }}">{{ certification.name }}</a>
-                    {%- else %}
-                    <p>{{ certification.name }}</p>
-                    {%- endif %}
-                </li>
-                {%- endfor %}
-            </ul>
+            <section class="certifications-section">
+                <h2>{{ config.theme.certifications_section_title }}</h2>
+                <ul>
+                    {%- for certification in config.theme.certifications %}
+                    <li>
+                        {%- if certification.link is defined %}
+                        <a href="{{ certification.link }}">{{ certification.name }}</a>
+                        {%- else %}
+                        <p>{{ certification.name }}</p>
+                        {%- endif %}
+                    </li>
+                    {%- endfor %}
+                </ul>
+            </section>
         </div>
         <div class="footer">
             Made with <a href="">MkDocs</a> using the <a href="https://github.com/Paul-Riviere/mkdocs-curriculum-vitae">Curriculum-vitae</a> theme.
