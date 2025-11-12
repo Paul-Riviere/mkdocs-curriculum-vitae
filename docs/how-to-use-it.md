@@ -54,6 +54,8 @@ Multiple themes are available, that affects CSS :
   ![](assets/themes/default.png)
 - **neon**
   ![](assets/themes/neon.png)
+- **nes**
+  ![](assets/themes/nes.png)
 
 ### Basic informations
 
