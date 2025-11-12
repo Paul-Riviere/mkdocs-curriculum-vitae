@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://paul-riviere.github.io/mkdocs-curriculum-vitae/how-to-use-it/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>How to use it - MkDocs curriculum vitae Theme</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "How to use it";
+        var mkdocs_page_input_path = "how-to-use-it.md";
+        var mkdocs_page_url = "/mkdocs-curriculum-vitae/how-to-use-it/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> MkDocs curriculum vitae Theme
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">mkdocs-curriculum-vitae</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../contributing/">Contributing</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">How to use it</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#layouts">Layouts</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#theming">Theming</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#basic-informations">Basic informations</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#profile-picture">Profile picture</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#experiences">Experiences</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#education">Education</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#skills">Skills</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#hobbies">Hobbies</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#certifications">Certifications</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#personnal-links">Personnal links</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#titles-override">Titles override</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#full-example">Full Example</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">MkDocs curriculum vitae Theme</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">How to use it</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="how-to-use-it">How to use it</h1>
+<p>In you <code>mkdocs.yml</code> file, put the curriculum-vitae theme :</p>
+<pre><code class="language-yml">theme:
+  name: curriculum-vitae
+</code></pre>
+<p>Next, you just have to create a <code>docs</code> folder in your repo, and only put an empty <code>index.md</code>.</p>
+<h2 id="configuration">Configuration</h2>
+<p>What you have to do is play with the theme variables :</p>
+<h3 id="layouts">Layouts</h3>
+<p>Choosing a layout is optional, without the variable, the <em>default</em> layout will be applied to your CV.</p>
+<p>To select one, you just have to define the <code>mkcv_layout</code> variable :</p>
+<pre><code class="language-yml"># mkdocs.yml
+
+theme:
+  name: curriculum-vitae
+  mkcv_layout: default
+</code></pre>
+<p>Multiple themes are available, that affects CSS :</p>
+<ul>
+<li><strong>default</strong>
+  <img alt="" src="../assets/layouts/default.png" /></li>
+<li><strong>vertical</strong>
+  <img alt="" src="../assets/layouts/vertical.png" /></li>
+</ul>
+<h3 id="theming">Theming</h3>
+<p>Choosing a theme is optional, without the variable, the <em>default</em> theme will be applied to your CV.</p>
+<p>To select one, you just have to define the <code>mkcv_theme</code> variable :</p>
+<pre><code class="language-yml"># mkdocs.yml
+
+theme:
+  name: curriculum-vitae
+  mkcv_theme: default
+</code></pre>
+<p>Multiple themes are available, that affects CSS :</p>
+<ul>
+<li><strong>default</strong>
+  <img alt="" src="../assets/themes/default.png" /></li>
+<li><strong>neon</strong>
+  <img alt="" src="../assets/themes/neon.png" /></li>
+<li><strong>nes</strong>
+  <img alt="" src="../assets/themes/nes.png" /></li>
+<li><strong>minimalist</strong>
+  <img alt="" src="../assets/themes/minimalist.png" /></li>
+</ul>
+<h3 id="basic-informations">Basic informations</h3>
+<ul>
+<li><code>firstname</code></li>
+<li><code>lastname</code></li>
+<li><code>mail</code></li>
+<li><code>location</code></li>
+</ul>
+<p>Example :</p>
+<pre><code class="language-yml">firstname: John
+lastname: Doe
+mail: john.doe@example.com
+location: Tours
+</code></pre>
+<h3 id="profile-picture">Profile picture</h3>
+<ul>
+<li><code>profile_picture</code></li>
+</ul>
+<p>Example :</p>
+<pre><code class="language-yml">profile_picture: https://dummyimage.com/600x600/
+</code></pre>
+<h3 id="experiences">Experiences</h3>
+<ul>
+<li><code>experiences</code></li>
+</ul>
+<p>Each <code>experience</code> has a <code>title</code>, and a <code>description</code>. You can also add a <code>start_date</code> and <code>end_date</code>.</p>
+<p>You can set <code>start_date</code> without <code>end_date</code>, this will put "now" instead.</p>
+<p>Example :</p>
+<pre><code class="language-yml">experiences:
+  - title: First experience
+    description: First experience description
+    start_date: 2024-01-01
+  - title: Second experience
+    description: Second experience description
+    start_date: 2023-01-01
+    end_date: 2023-12-31
+</code></pre>
+<h3 id="education">Education</h3>
+<ul>
+<li><code>educations</code></li>
+</ul>
+<p>Each <code>education</code> has a <code>title</code>, and a <code>description</code>. You can also add a <code>start_date</code> and <code>end_date</code>.</p>
+<p>You can set <code>start_date</code> without <code>end_date</code>, this will put "now" instead.</p>
+<pre><code class="language-yml">educations:
+  - title: First education
+    description: First education description
+    start_date: 2024-01-01
+  - title: Second education
+    description: Second education description
+    start_date: 2023-01-01
+    end_date: 2023-12-31
+</code></pre>
+<h3 id="skills">Skills</h3>
+<ul>
+<li><code>skills</code></li>
+</ul>
+<pre><code class="language-yml">skills:
+  - skill 1
+  - skill 2
+</code></pre>
+<h3 id="hobbies">Hobbies</h3>
+<ul>
+<li><code>hobbies</code></li>
+</ul>
+<pre><code class="language-yml">hobbies:
+  - hobby 1
+  - hobby 2
+</code></pre>
+<h3 id="certifications">Certifications</h3>
+<ul>
+<li><code>certifications</code></li>
+</ul>
+<p>Each <code>certification</code> must have a <code>name</code>, and optionnaly you can specify a <code>link</code> if you want to.</p>
+<pre><code class="language-yml">certifications:
+  - name: certification 1
+  - name: certification 2
+    link: htttps://exemple.com
+</code></pre>
+<h3 id="personnal-links">Personnal links</h3>
+<p>You can add links to your CV, those variables are optionnal. The link will appear only if the associated variable is defined.</p>
+<pre><code class="language-yml">personnal_links:
+  github: https://example.com/
+  gitlab: https://example.com/
+  linkedin: https://example.com/
+  facebook: https://example.com/
+  youtube: https://example.com/
+  Instagram: https://example.com/
+  tiktok: https://example.com/
+  x: https://example.com/
+</code></pre>
+<h3 id="titles-override">Titles override</h3>
+<p>You can override titles with ease with those variables. You don't need to define them, as they have default values.</p>
+<pre><code class="language-yml">main_title: Main title override
+basic_informations_section_title: Basic infos title override
+personnal_links_section_title: Links title override
+experiences_section_title: Experiences title override
+education_section_title: Education title overrride
+skills_section_title: Skills title override
+hobbies_section_title: Hobbies title override
+</code></pre>
+<h3 id="full-example">Full Example</h3>
+<pre><code class="language-yml"># mkdocs.yml
+
+theme:
+  name: curriculum-vitae
+  mkcv_layout: default
+  mkcv_theme: default
+  firstname: John
+  lastname: Doe
+  mail: john.doe@example.com
+  location: Tours
+  profile_picture: https://dummyimage.com/600x600/
+  main_title: Main title override
+  basic_informations_section_title: Basic infos title override
+  skills_section_title: Skills title override
+  personnal_links_section_title: Links title override
+  experiences_section_title: Experiences title override
+  education_section_title: Education title overrride
+  hobbies_section_title: Hobbies title override
+  certifications_section_title: Certifications title override
+  skills:
+    - skill 1
+    - skill 2
+  hobbies:
+    - hobby 1
+    - hobby 2
+  certifications:
+    - name: certification 1
+    - name: certification 2
+      link: htttps://exemple.com
+  personnal_links:
+    github: https://example.com/
+    gitlab: https://example.com/
+    linkedin: https://example.com/
+    facebook: https://example.com/
+    youtube: https://example.com/
+    Instagram: https://example.com/
+    tiktok: https://example.com/
+    x: https://example.com/
+  experiences:
+    - title: First experience
+      description: First experience description
+      start_date: 2024-01-01
+    - title: Second experience
+      description: Second experience description
+      start_date: 2023-01-01
+      end_date: 2023-12-31
+  educations:
+    - title: First education
+      description: First education description
+      start_date: 2024-01-01
+    - title: Second education
+      description: Second education description
+      start_date: 2023-01-01
+      end_date: 2023-12-31
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../contributing/" class="btn btn-neutral float-left" title="Contributing"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../contributing/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
