@@ -1,3 +1,10 @@
+## 0.12.0 (2025-11-12)
+
+### Feat
+
+- add x to the personnal links
+- add nes theme
+
 ## 0.11.0 (2025-11-09)
 
 ### Feat
