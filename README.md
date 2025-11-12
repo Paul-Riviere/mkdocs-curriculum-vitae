@@ -29,3 +29,7 @@ See [documentation](https://paul-riviere.github.io/mkdocs-curriculum-vitae/how-t
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) file.
+
+## Credits
+
+Thanks a lot to the amazing [NES.css](https://github.com/nostalgic-css/NES.css) project, that I used to create the nes theme. The css was adapted to this repo, and the icons were rebuilt with Piskel because the originals weren't compliant with the current html/css. Those icons helped me designing the other ones, such as X, Gitlab, and Tiktok.
