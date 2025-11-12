@@ -167,6 +167,7 @@ personnal_links:
   youtube: https://example.com/
   Instagram: https://example.com/
   tiktok: https://example.com/
+  x: https://example.com/
 ```
 
 ### Titles override
@@ -223,6 +224,7 @@ theme:
     youtube: https://example.com/
     Instagram: https://example.com/
     tiktok: https://example.com/
+    x: https://example.com/
   experiences:
     - title: First experience
       description: First experience description
