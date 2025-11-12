@@ -1,3 +1,9 @@
+## 0.12.1 (2025-11-12)
+
+### Fix
+
+- missing nes ttf in pypi build
+
 ## 0.12.0 (2025-11-12)
 
 ### Feat
